@@ -8,12 +8,7 @@ Example on Linux (Ubuntu/Mint), instructed as -
 
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
-`sudo apt-get install \`
-`    apt-transport-https \`
-`    ca-certificates \`
-`    curl \`
-`    gnupg-agent \`
-`    software-properties-common`
+`sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
 
 `shuzhao@X3:~$  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 
@@ -47,11 +42,11 @@ https://jupyter-docker-stacks.readthedocs.io/en/latest/
 
 This also maps to local directory w/proj_test:
 
-docker run -v /home/shuzhao/w/proj_test:/home/jovyan/p1 -p 8888:8888 jupyter/scipy-notebook
+`docker run -v /home/shuzhao/w/proj_test:/home/jovyan/p1 -p 8888:8888 jupyter/scipy-notebook`
 
 **R notebook**
 
-docker run -v /home/shuzhao/w/proj_test:/home/jovyan/p1 -p 8888:8888 jupyter/r-notebook
+`docker run -v /home/shuzhao/w/proj_test:/home/jovyan/p1 -p 8888:8888 jupyter/r-notebook`
 
 
 ## Example notebooks
