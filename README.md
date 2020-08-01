@@ -62,3 +62,8 @@ This also maps to local directory w/proj_test:
 ## Additional notebooks:
 
 - http://mummichog.org/notebooks.html
+
+
+
+## The HTML/ folder is no longer updated, as GitHub renders .ipynb now
+
