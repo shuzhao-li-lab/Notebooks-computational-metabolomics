@@ -1,6 +1,10 @@
 # Notebooks in Computational Metabolomics
 Jupyter notebooks covering topics in metabolomics data analysis and computational methods. Free in the 3-Clause BSD License. Ongoing. Contributions are welcome.
 
+Examples are under notebooks/.
+The HTML/ folder is no longer updated, as GitHub renders .ipynb now
+
+
 ## Use Jupyter notebooks via Docker containers
 
 ### Install Docker
@@ -62,8 +66,4 @@ This also maps to local directory w/proj_test:
 ## Additional notebooks:
 
 - http://mummichog.org/notebooks.html
-
-
-
-## The HTML/ folder is no longer updated, as GitHub renders .ipynb now
 
