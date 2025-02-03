@@ -3,11 +3,9 @@
 This repo is a collection of Jupyter notebooks covering topics in metabolomics data analysis and computational methods. 
 
 Some of the notebooks were written as part of publications. Users should distinguish questions on metabolomics and on general computing techniques. The latter often have ready answers on the internet. The notebooks are not limited to Python, but the majority here are in Python.
-
 Feel free to explore the notebooks under `notebooks/`.
-The HTML/ folder is no longer updated, as GitHub renders `.ipynb` now.
 
-Notebooks may be written quickly during data analysis, not as clean as desired pedagogical materials. Users should use discretion on dated materials or erros. Feedback and contributions are welcome. 
+Notebooks may be written quickly during data analysis, not as clean as desired pedagogical materials. Users should use discretion on dated materials or errors. Feedback and contributions are welcome. 
 Free in the 3-Clause BSD License. 
 
 ## Use Jupyter notebooks via VS Code
@@ -26,6 +24,7 @@ See [Docker page](/docker.md)
 - [Illustration of mass tracks in asari](notebooks/asari2023_Notebook_Composite_mass_tracks.ipynb)
 - [Illustration of khipu plots for isotope tracing data](notebooks/khipu2023_demo_khipu_plot.ipynb)
 - [Analyzing the cardiomyocyte data in asari pipeline](notebooks/pcpfm_Bowen2023_analysis.ipynb)
+- [Metabolomics Pathway Analysis at ASMS 2018Fall](notebooks/All_Exercises_execuable_ASMS2018F.ipynb)
 - More under `notebooks/`.
 
 ## Other Links
