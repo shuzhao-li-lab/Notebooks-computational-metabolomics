@@ -1,69 +1,37 @@
 # Notebooks in Computational Metabolomics
-Jupyter notebooks covering topics in metabolomics data analysis and computational methods. Free in the 3-Clause BSD License. Ongoing. Contributions are welcome.
 
-Examples are under notebooks/.
-The HTML/ folder is no longer updated, as GitHub renders .ipynb now
+This repo is a collection of Jupyter notebooks covering topics in metabolomics data analysis and computational methods. 
 
+Some of the notebooks were written as part of publications. Users should distinguish questions on metabolomics and on general computing techniques. The latter often have ready answers on the internet. The notebooks are not limited to Python, but the majority here are in Python.
 
-## Use Jupyter notebooks via Docker containers
+Feel free to explore the notebooks under `notebooks/`.
+The HTML/ folder is no longer updated, as GitHub renders `.ipynb` now.
 
-### Install Docker
-Example on Linux (Ubuntu/Mint), instructed as -
+Notebooks may be written quickly during data analysis, not as clean as desired pedagogical materials. Users should use discretion on dated materials or erros. Feedback and contributions are welcome. 
+Free in the 3-Clause BSD License. 
 
-https://docs.docker.com/install/linux/docker-ce/ubuntu/
+## Use Jupyter notebooks via VS Code
+This is the preferred way of doing data analysis in our research lab. VS Code is a development environment:
+- [VS Code](https://code.visualstudio.com/download). Then install Python and Jupyter notebook within VS Code.
 
-`sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
-
-`shuzhao@X3:~$  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
-
-OK
-
-`shuzhao@X3:~$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"`
-
-`shuzhao@X3:~$ sudo apt update`
-
-`shuzhao@X3:~$ sudo apt-get install docker-ce docker-ce-cli containerd.io`
-
-**Test Docker**
-
-`shuzhao@X3:~$ sudo docker run hello-world`
-
-**Add me to docker group, so I don't have to use sudo to run docker**
-
-`shuzhao@X3:~$ sudo groupadd docker`
-
-`shuzhao@X3:~$ sudo usermod -aG docker $USER`
-
-`shuzhao@X3:~$ newgrp docker`
-
-
-### Use data science stack via Docker
-instructed as -
-
-https://jupyter-docker-stacks.readthedocs.io/en/latest/
-
-**Scipy notebook**
-
-This also maps to local directory w/proj_test:
-
-`docker run -v /home/shuzhao/w/proj_test:/home/jovyan/p1 -p 8888:8888 jupyter/scipy-notebook`
-
-**R notebook**
-
-`docker run -v /home/shuzhao/w/proj_test:/home/jovyan/p1 -p 8888:8888 jupyter/r-notebook`
-
+## Use R or Python Jupyter notebooks via Docker containers
+See [Docker page](/docker.md)
 
 ## Example notebooks
 
 - [Averaging technical replicates](notebooks/Averaging_technical_replicates.ipynb)
-
 - [Statistical analyses of metabolite features (group comparison)](notebooks/Statistics_group_comparison.ipynb)
-
 - [Clustering of metabolite peaks from LC-MS](notebooks/HCL_clustering_considering_retention_time.ipynb)
-
 - [Bubble plot, using scatter plot panels to visualize result from pathway analysis](notebooks/Bubble_plot_pathways.ipynb)
+- [Illustration of mass tracks in asari](notebooks/asari2023_Notebook_Composite_mass_tracks.ipynb)
+- [Illustration of khipu plots for isotope tracing data](notebooks/khipu2023_demo_khipu_plot.ipynb)
+- [Analyzing the cardiomyocyte data in asari pipeline](notebooks/pcpfm_Bowen2023_analysis.ipynb)
+- More under `notebooks/`.
 
-## Additional notebooks:
+## Other Links
 
-- http://mummichog.org/notebooks.html
+- Example metabolomics data to use: https://github.com/shuzhao-li-lab/data
+- Workshop at MANA2024 - Working like a data scientist on Jupyter: https://github.com/shuzhao-li/MANA2024
+- Week-long workshop at ESPOL 2019, Metabolomics and Data Analysis: https://github.com/shuzhao-li-lab/espol-workshop
+- Tutorial for metabolomics data processing using asari tools: https://github.com/shuzhao-li-lab/asari_pcpfm_tutorials
 
